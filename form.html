@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Tạo form cơ bản</title>
+</head>
+<style>
+    .font {
+        font-family: "Lucida Grande","Lucida Sans Unicode", Time, sans-serif;
+    }
+</style>
+<body>
+<form action="https://notepad.vn/hoang123123123" method="get" class="font">
+    <h1>Order Form</h1>
+    <p>What would you like to buy?</p>
+    <select>
+        <option>A</option>
+        <option>B(+ 0.5$)</option>
+        <option>C(+ 0.5$)</option>
+    </select>
+    <p>How Many would you like to odrer?</p>
+        <input type="radio" name="price" value="1-$10"/>1 - $10<br>
+        <input type="radio" name="price" value="2-$20"/>2 - $20<br>
+        <input type="radio" name="price" value="3-$25"/>3 - $25
+    <p>Name: <span style="color:red;">*</span></p>
+        <label><input type="text" name="FirstName" size="15" placeholder="FirstName" ></label>
+        <label><input type="text" name="LastName" size="15" placeholder="LastName" ></label><br>
+    <p>Email: </p>
+    <input type="text" name="Email" placeholder="Email" size="25" ><br>
+    <p>Phone Number: </p>
+    <input type="text" name="Phone1" size="10" placeholder="0123456789" /> -
+    <input type="text" name="Phone2" size="10" placeholder="0111111111" /> -
+    <input type="text" name="Phone3" size="10" placeholder="0888899999" /><br><br>
+    <input type="submit" name="Submit" value="submit";>
+
+</form>
+</body>
+</html>
