@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://genk.mediacdn.vn/k:2016/extra-large-1466515945-cover-image-1466656713911/day-la-mau-gi-xanh-duong-hay-xanh-la-hon-mot-nghin-nguoi-da-dua-ra-cau-tra-loi-khac-han-nhau.jpg");
+            color: rgb(255, 255, 255);}
+            table {
+    width:30%;
+}
+table, th, td {
+    border: 1px solid rgb(255, 0, 0);
+    border-collapse: collapse;
+    color: rgb(0, 0, 0);}
+
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+tr:nth-child(odd) {
+   background-color:#fff;
+}
+th {
+    background-color: rgb(0, 4, 255);
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/ogg">
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    <form action="https://notepad.vn/hoang123123123" method="get">
+        
+        <!--fieldset>
+            
+            <legend>Personal information: </legend>
+        </fieldset-->
+
+        account:<br>
+        <input type="text" name="Firstname" value=""><BR>
+        password:<br>
+        <input type="password" name="lastname" value=""><br>    
+        Sở thích:<br/>
+        <label><input name="hobby" value="travel" type="checkbox"/> Du lịch</label> <br/>
+        <label><input name="hobby" value="sport" type="checkbox"/> Thể thao</label> <br/>
+        <label><input name="hobby" value="cooking" type="checkbox"/> Nấu ăn</label> <br/>
+        Sở thích(chỉ chọn một):<br/>
+        <label><input name="hobby" value="travel" type="radio" checked/> Du lịch</label> <br/>
+        <label><input name="hobby" value="sport" type="radio"/> Thể thao</label> <br/>
+        <label><input name="hobby" value="cooking" type="radio"/> Nấu ăn</label> <br/>
+        <button type="button">
+            <img src="http://codegym.vn/wp-content/uploads/2017/03/CodeGym-3-02-copy.jpg" width="100px"/>
+        </button><br>
+        <textarea></textarea><br>
+        <select name="city" >
+            <option value="HN">Hà Nội</option>
+            <option value="HP">Hải Phòng</option>
+            <option value="HU">Huế</option>
+            <option value="DN">Đà Nẵng</option>
+            <option value="SG">Sài Gòn</option>
+          </select>
+          <select name="city" multiple>
+            <option value="HN">Hà Nội</option>
+            <option value="HP">Hải Phòng</option>
+            <option value="HU">Huế</option>
+            <option value="DN">Đà Nẵng</option>
+            <option value="SG">Sài Gòn</option>
+          </select><br><br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset"/>
+      <input name="secret" value="abcg124faasfjh149dfd" type="hidden"/><br>
+      </form>
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+</body>
+<html>
+<!--body>
+    <table border="1">
+        <tr>
+            <th>Tên</th>
+            <th>Tuổi</th>
+        </tr>
+        <tr>
+            <td>Nhat Hoang</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>Minh Nhat</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+
+    <table border="1">
+        <tr>
+            <th>Quý</th>
+            <th>Tháng</th>
+            <th>Doanh</th>
+        </tr>
+        <tr>
+            <td rowspan="3">1</td>
+            <td>1</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>$90</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>$80</td>
+        </tr>
+        <td rowspan="3">2</td>
+        <td>4</td>
+        <td>$110</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>$120</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>$130</td>
+    </tr>
+    <tr>
+        <td colspan="3">Tổng: </td>
+    </tr>
+
+
+    </table>
+</body-->
+
+    <!--form action="/action_page" method="post">
+        Ten Dang Nhap:<br>
+        <label for="Fname">Fisrt Name</label><br>
+        <input type="text" id="fname" name="fname>"><br>
+        <label for="Lname">Last Name</label><br>
+        <input type="text" id="fname" name="fname>"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <<form action="https://httpbin.org/anything" method="get">
+        <p>FORM này gửi dữ liệu bằng phương thức POST (an toàn hơn)</p>
+        <label for="name">Tên đăng nhập:</label><br>
+        <input id="name" name="name" type="text" value=""><br>
+    
+        <label>Mật khẩu:</label><br>
+        <input name="pass" type="password" value=""><br>
+        <input type="submit" name="submit" value="Đăng Nhập" />
+        <input type="radio" name="gender" value="male" > Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <input type="checkbox" name="Vehicle1" value="Bike"> I Have a Bike
+        <input type="checkbox" name="Vehicle2" value="Car"> I Have a Car
+        <input type="button" onclick="alert('hello')" value="click">
+    </form>
+    <form>
+        Ten Dang Nhap:<br>
+        <input type="text" ><br>
+        Mat Khau:<br>
+        <input type="password"><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form-->
+ 
