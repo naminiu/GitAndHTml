@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ung Dung Chuyen Doi Tien Te</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th></th>
+            <th>From Currency</th>
+            <th></th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <th> <input type="number" id="Amount"> </th>
+            <th></th>
+            <th>
+                <select id="from">
+                    <option id="VND">VND</option>
+                    <option id="USD">USD</option>
+                </select>
+            </th>
+            <th></th>
+            <th>
+                <select id="to">
+                    <option id="VND">VND</option>
+                    <option id="USD">USD</option>
+                </select>
+            </th>
+            <th>
+                <button onclick="Convert()" style="background-color: blue; color: white;">Convert</button>
+            </th>
+        </tr>
+        <tr style="color: blue;">
+            <br> 
+            <th>
+                <br> 
+                <div id="result" style="font-size: 20px;"></div>
+            </th>
+        </tr>
+    </table>
+
+    <script src="/cdtt.js"></script>
+</body>
+
+</html>
