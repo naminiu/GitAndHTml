@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính số ngày</title>
+</head>
+
+<body>
+    <h2>Kiểm tra tháng trong năm</h2>
+    <input type="number" id="number" placeholder="Nhập tháng">
+    <button onclick="day()">Tính số ngày</button>
+    <button onclick="reset()">reset</button>
+    <br> <br>
+    <p>Kết quả là: </p> <div id="result" ></div>
+    <!-- <table>
+        <tr>
+            <td>
+                <input type="number" id="number">
+                <button onclick="day()">Tính số ngày</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="result"></div>
+            </td>
+        </tr>
+
+    </table> -->
+    <script>
+        function day() {
+            var month = document.getElementById("number").value;
+            switch (month) {
+                case '1':
+                case '3':
+                case '5':
+                case '7':
+                case '8':
+                case '10':
+                case '12':
+                    document.getElementById("result").innerHTML = "<b>" + "Tháng " + month + " có 31 ngày." + "<b>";
+                    break;
+                case '4':
+                case '6':
+                case '9':
+                case '11':
+                    document.getElementById("result").innerHTML = "<b>" + "Tháng " + month + " có 30 ngày." + "<b>";
+                        break;
+                case '2':
+                    document.getElementById("result").innerHTML = "<b>" + "Tháng 2 có 28 hoặc 29 ngày." + "<b>";
+                    break;
+                default:
+                    document.getElementById("result").innerHTML = "Nhập lại tháng";
+                    break;
+            }
+        }
+        function reset(){
+            document.getElementById("number").value = "";
+            document.getElementById("result").innerHTML = "";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+
+<body>
+    <p>Nhập cân nặng:</p>
+    <input type="number" id="weight">
+    <p>Nhập chiều cao:</p>
+    <input type="number" id="height">
+    <br><br>
+    <button onclick="submit()">Submit</button>
+    <button onclick="reset()">reset</button>
+    <br>  <br>
+
+    <div id="result">Chỉ số BMI của bạn là: </div>
+    <script>
+        function submit() {
+            var we = document.getElementById("weight").value;
+            var he = document.getElementById("height").value;
+            var BMI = we/(he*he);
+            var result1 = "";
+
+            if (BMI < 18.5) {
+                result1 = "bạn quá gầy";
+            } else if (BMI < 25) {
+                result1 = "bạn bình thường";
+            } else if (BMI < 30) {
+                result1 = "bạn thừa cân";
+            } else {
+                result1 = "bạn quá béo phì";
+            }
+            
+            document.getElementById("result").innerHTML = "Chỉ số BMI của bạn là:  "+ BMI + ". " + "<b>"+ result1 + "</b>";
+        }
+        function reset(){
+            document.getElementById("weight").value = "";
+            document.getElementById("height").value = "";
+            document.getElementById("result").innerHTML = "";
+        }
+    </script>
+</body>
+
+</html>
