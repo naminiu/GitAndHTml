@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>BT máy tính đơn giản </title>
+    <style>
+        table {
+            height: 100px;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 20px;
+            border: 3px solid rgb(0, 0, 0);
+            padding: 5px 6px;
+            margin: 5px;
+        }
+
+        button {
+            width: 40px;
+            size: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <img width="200px" src="https://james.codegym.vn/pluginfile.php/64925/mod_assign/intro/1.png" alt="">
+    <table>
+        <tr>
+            <th colspan="4"> <input type="text" id="number"></th>
+
+        </tr>
+        <tr>
+            <th><button onclick="input(this.value)" value="1">1</button></th>
+            <th><button onclick="input(this.value)" value="2">2</button></th>
+            <th><button onclick="input(this.value)" value="3">3</button></th>
+            <th><button onclick="input(this.value)" value="+">+</button></th>
+
+        </tr>
+        <tr>
+            <th><button onclick="input(this.value)" value="4">4</button></th>
+            <th><button onclick="input(this.value)" value="5">5</button></th>
+            <th><button onclick="input(this.value)" value="6">6</button></th>
+            <th><button onclick="input(this.value)" value="-">-</button></th>
+        </tr>
+        <tr>
+            <th><button onclick="input(this.value)" value="7">7</button></th>
+            <th><button onclick="input(this.value)" value="8">8</button></th>
+            <th><button onclick="input(this.value)" value="9">9</button></th>
+            <th><button onclick="input(this.value)" value="*">X</button></th>
+        </tr>
+        <tr>
+            <th><button onclick="reset()">AC</button></th>
+            <th><button onclick="input(this.value)" value="0">0</button></th>
+            <th><button onclick="result()">=</button></th>
+            <th><button onclick="input(this.value)" value="/">/</button></th>
+        </tr>
+    </table>
+    <script>
+        var num = document.getElementById("number");
+        function input(value) {
+            num.value += value;
+        }
+        function reset() {
+            num.value = "";
+        }
+        function result() {
+            var result = eval(num.value);
+            num.value = result;
+        }
+    </script>
+</body>
+
+</html>
