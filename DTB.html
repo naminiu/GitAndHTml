@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <label for="vatli">Vật lí</label>
+    <input id="vatli"><br>
+    <label for="hoahoc">Hóa học</label>
+    <input id="hoahoc"><br>
+    <label for="sinhhoc">Sinh học</label>
+    <input id="sinhhoc">
+    <table>
+        <tr>
+            <td><p id="kql" >Kết quả ĐTB là: </p></td>
+            <td><p id="result"> </p> <br</td>
+        </tr>
+    </table>
+
+
+    <button onclick="DTB()">DTB</button>
+    <button onclick="reset()">reset</button>
     <script>
+        function DTB() {
+            var vatLy = Number(document.getElementById("vatli").value);
+            var hoaHoc = document.getElementById("hoahoc");
+            var dHoa = Number(hoaHoc.value);
+            var sinhHoc = Number(document.getElementById("sinhhoc").value);
+            var kq = (vatLy + dHoa + sinhHoc) / 3;
+
+
+            document.getElementById("result").innerHTML = "<b>" +kq+ "<b>";
+        }
+        function reset(){
+             document.getElementById("vatli").value="";
+             document.getElementById("sinhhoc").value="";
+             document.getElementById("hoahoc").value="";
+             document.getElementById("result").innerHTML="";
+
+        }
+    </script>
+
+    <!-- <script>
         var a = Number(prompt("Nhập điểm môn Vật lí: "));
         var b = Number(prompt("Nhập điểm môn Hóa học: "));
         var c = Number(prompt("Nhập điểm môn Sinh học: "));
         var DTB = (a+b+c)/3;
         document.write("ĐTB là:= " + DTB);
-    </script>
+    </script> -->
 </body>
+
 </html>
