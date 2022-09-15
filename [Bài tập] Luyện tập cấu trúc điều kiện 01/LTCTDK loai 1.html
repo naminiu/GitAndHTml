@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+    <script src="/[Bài tập] Luyện tập cấu trúc điều kiện 01/bai1.js"></script>
+    <script src="/[Bài tập] Luyện tập cấu trúc điều kiện 01/bai2.js"></script>
+    <script src="/[Bài tập] Luyện tập cấu trúc điều kiện 01/bai3.js"></script>
+    <script src="/[Bài tập] Luyện tập cấu trúc điều kiện 01/bai4.js"></script>
+    <script src="/[Bài tập] Luyện tập cấu trúc điều kiện 01/bai5.js"></script>
+    <script src="/[Bài tập] Luyện tập cấu trúc điều kiện 01/bai6.js"></script>
+
+    <script>
+        function resetall() {
+            document.getElementById("diema").value = "";
+            document.getElementById("diemb").value = "";
+            document.getElementById("result").innerHTML = "";
+            document.getElementById("tuoi").value = "";
+            document.getElementById("result1").innerHTML = "";
+            document.getElementById("songuyen").value = "";
+            document.getElementById("result4").innerHTML = "";
+            document.getElementById("songuyen1").value = "";
+            document.getElementById("songuyen2").value = "";
+            document.getElementById("songuyen3").value = "";
+            document.getElementById("result6").innerHTML = "";
+            document.getElementById("kiemtra").value = "";
+            document.getElementById("giuaki").value = "";
+            document.getElementById("cuoiki").value = "";
+            document.getElementById("result7").innerHTML = "";
+            document.getElementById("phantramhoahong").value = "";
+            document.getElementById("doanhso").value = "";
+            document.getElementById("result8").innerHTML = "";
+        }
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <button onclick="submitall()">submitall</button>
+    <button onclick="resetall()">resetall</button>
+
+
+    <h3>Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không.</h3>
+    <label for="diema">Nhập vào a: <input type="number" id="diema"> </label> <br> <br>
+    <label for="diemb">Nhập vào b: <input type="number" id="diemb"></label> <br><br>
+    <button onclick="submit()">Nhấn kiểm tra</button>
+    <button onclick="reset()">reset</button>
+    <p id="result" style="color: blue;"></p>
+
+
+    <h3>Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.</h3>
+    <label for="tuoi">Nhập tuổi: <input type="number" id="tuoi"></label><br><br>
+    <button onclick="submit1()">Nhấn kiểm tra</button>
+    <button onclick="reset1()">reset</button>
+    <p id="result1" style="color: blue;"></p>
+
+
+    <h3>Bài 3: kiểm tra số đó là lớn hay nhỏ hơn 0.</h3>
+    <label for="songuyen">Nhập một số: <input type="number" id="songuyen"></label><br><br>
+    <button onclick="submit3()">Nhấn kiểm tra</button>
+    <button onclick="reset3()">reset</button>
+    <p id="result4" style="color: blue;"></p>
+
+
+    <h3>Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó </h3>
+    <label for="songuyen1">Nhập số: <input type="number" id="songuyen1"></label><br><br>
+    <label for="songuyen2">Nhập số: <input type="number" id="songuyen2"></label><br><br>
+    <label for="songuyen3">Nhập số: <input type="number" id="songuyen3"></label><br><br>
+    <button onclick="submit6()">Nhấn kiểm tra</button>
+    <button onclick="reset6()">reset</button>
+    <p id="result6" style="color: blue;"></p>
+
+
+    <h3>Bài 5: Xếp hạng học lực của học sinh dựa trên điểm trung bình của các điểm bài kiểm tra, điểm thi giữa kỳ, điểm
+        thi cuối kỳ</h3>
+    <label for="kiemtra">Điểm kiểm tra: <input type="number" id="kiemtra" min="0" max="10"></label><br><br>
+    <label for="giuaki">Điểm giữa kì: <input type="number" id="giuaki" min="0" max="10"></label><br><br>
+    <label for="cuoiki">Điểm cuối kì: <input type="number" id="cuoiki" min="0" max="10"></label><br><br>
+    <button onclick="submit7()">Nhấn kiểm tra</button>
+    <button onclick="reset7()">reset</button>
+    <p id="result7" style="color: blue;"></p>
+
+
+    <h3>Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng </h3>
+    <p>tiền hoa hồng = % hoa hồng * doanh số bán hàng</p>
+    <label for="hoahong">Nhập % hoa hồng: <input type="number" id="phantramhoahong" min="1" max="100"></label><br><br>
+    <label for="doanhso">Nhập doanh số bán hàng: <input type="number" id="doanhso"></label><br><br>
+    <button onclick="submit8()">Tính tiền</button>
+    <button onclick="reset8()">reset</button>
+    <p id="result8" style="color: blue;"></p>
+
+
+</body>
+
+</html>
