@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTCTDK loai 2</title>
+
+</head>
+
+<body style="text-align: center;">
+    <table border="1">
+        <tr>
+            <th colspan="3">Bài 1: Chuyển từ độ C sang độ F.</th>
+
+        </tr>
+        <tr>
+            <th><label for="nhapdoc">Nhập độ C</label></th>
+            <th>Kiểm tra</th>
+            <th>Kết quả</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="nhapdoc"></td>
+            <td><button onclick="doc()">Submit</button> </td>
+            <td>
+                <p id="result"></p>
+            </td>
+        </tr>
+        <br><br>
+
+    </table>
+    <table border="1">
+        <tr>
+            <th colspan="3">Bài 2: Chuyển từ mét sang feet:</th>
+        </tr>
+        <tr>
+            <th><label for="nhapmet">Nhập mét</label></th>
+            <th>Kiểm tra</th>
+            <th>Kết quả</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="nhapmet"></td>
+            <td><button onclick="met()">Submit</button> </td>
+            <td>
+                <p id="result2"> </p>
+            </td>
+        </tr>
+        <br><br>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="3">Bài 3: Tính diện tích hình vuông khi biết cạnh a.</th>
+        </tr>
+        <tr>
+            <th><label for="nhapa">Nhập a</label></th>
+            <th>Kiểm tra</th>
+            <th>Kết quả</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="nhapa"></td>
+            <td><button onclick="dientich()">Submit</button> </td>
+            <td>
+                <p id="result3"></p>
+            </td>
+        </tr>
+        <br><br>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="4">Bài 4: Tính diện tích hình chữ nhật khi biết 02 cạnh a, b.</th>
+        </tr>
+        <tr>
+            <th><label for="nhapa4">Nhập a</label></th>
+            <th><label for="nhapb4">Nhập b</label></th>
+            <th>Kiểm tra</th>
+            <th>Kết quả</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="nhapa4"></td>
+            <td><input type="number" id="nhapb4"></td>
+
+            <td><button onclick="dthinhchunhat()">Submit</button> </td>
+            <td>
+                <p id="result4"></p>
+            </td>
+        </tr>
+        <br><br>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="4">Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.</th>
+        </tr>
+        <tr>
+            <th><label for="nhapa5">Nhập a</label></th>
+            <th><label for="nhapb5">Nhập b</label></th>
+            <th>Kiểm tra</th>
+            <th>Kết quả</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="nhapa5"></td>
+            <td><input type="number" id="nhapb5"></td>
+
+            <td><button onclick="dttamgiacvuong()">Submit</button> </td>
+            <td>
+                <p id="result5"></p>
+            </td>
+        </tr>
+        <br><br>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="4">Bài 6: Giải phương trình bậc 1: ax + b = 0</th>
+        </tr>
+        <tr>
+            <th><label for="nhapa6">Nhập a</label></th>
+            <th><label for="nhapb6">Nhập b</label></th>
+            <th>Kiểm tra</th>
+            <th>Kết quả</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="nhapa6"></td>
+            <td><input type="number" id="nhapb6"></td>
+
+            <td><button onclick="ptbac1()">Submit</button> </td>
+            <td>
+                <p id="result6"></p>
+            </td>
+        </tr>
+        <br><br>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="6">Bài 7: Giải phương trình bậc 2: ax2+bx+c=0</th>
+        </tr>
+        <tr>
+            <th><label for="nhapa7">Nhập a</label></th>
+            <th><label for="nhapb7">Nhập b</label></th>
+            <th><label for="nhapc7">Nhập c</label></th>
+            <th>Kiểm tra</th>
+            <th><label for="delta1">KQ Delta</label></th>
+            <th>Kết quả</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="nhapa7"></td>
+            <td><input type="number" id="nhapb7"></td>
+            <td><input type="number" id="nhapc7"></td>
+            <td><button onclick="ptbac2()">Submit</button> </td>
+            <td>
+                <p id="delta1"></p>
+            </td>
+
+            <td>
+                <p id="result7"></p>
+            </td>
+        </tr>
+        <br><br>
+    </table>
+    <table border="1">
+        <tr>
+            <th colspan="6">Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.</th>
+        </tr>
+        <tr>
+            <th><label for="nhapa9">Nhập a</label></th>
+            <th><label for="nhapb9">Nhập b</label></th>
+            <th><label for="nhapc9">Nhập c</label></th>
+            <th><label>Điều kiện</label></th>
+
+            <th>Kiểm tra</th>
+            <th>Kết quả</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="nhapa9"></td>
+            <td><input type="number" id="nhapb9"></td>
+            <td><input type="number" id="nhapc9"></td>
+            <td>
+                <p>a,b,c > 0; a + b > c; b + c > a; a + c > b</p>
+            </td>
+            <td><button onclick="tamgiac()">Submit</button> </td>
+            <td>
+                <p id="result9"></p>
+            </td>
+        </tr>
+        <br><br>
+    </table>
+    <br><br>
+
+    <table border="1">
+        <tr>
+            <th colspan="6">Bài 10: Viết chương trình tính giá điện.
+            </th>
+        </tr>
+        <tr>
+            <th>Số KWh: </th>
+            <th><input type="number" id="number10"></th>
+        </tr>
+        <tr>
+            <th>Số tiền là:</th>
+            <th>
+                <p id="result10"></p>
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><button onclick="submit10()">Bấm để kiểm tra</button>
+                <button onclick="reset10()">reset</button>
+            </th>
+        </tr>
+    </table>
+</body>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai1.js"></script>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai2.js"></script>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai3.js"></script>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai4.js"></script>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai5.js"></script>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai6.js"></script>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai7.js"></script>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai9.js"></script>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai10.js"></script>
+
+</html>
