@@ -1,7 +1,7 @@
 function submit() {
     var so = Number(document.getElementById("number").value);
     var result1 = "";
-    if (so >= 11) {
+    if (so > 10 || so < 0) {
         result1 = "Không hợp lệ";
     } else
         if (so >= 9) {
@@ -12,7 +12,7 @@ function submit() {
             result1 = "Khá";
         } else if (so >= 5) {
             result1 = "Trung bình";
-        } else if (so >= 0) {
+        } else {
             result1 = "yếu";
         }
     document.getElementById("result").innerHTML = result1;
