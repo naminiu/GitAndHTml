@@ -15,5 +15,13 @@ function submit() {
         } else {
             result1 = "yếu";
         }
-    document.getElementById("result").innerHTML = result1;
+    document.getElementById("result").value = result1;
+    switch (key) {
+        case value:
+            
+            break;
+    
+        default:
+            break;
+    }
 }
