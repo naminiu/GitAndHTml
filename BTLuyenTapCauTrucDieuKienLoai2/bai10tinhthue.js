@@ -41,5 +41,15 @@ hienthi = (`thuế cá nhân thu nhập phải đóng là = ${
      document.getElementById("result4").innerHTML = hienthi4;
      document.getElementById("result").innerHTML = hienthi;
 
-}              
+} 
+function reset(){
+   luong = document.getElementById("luongthang").value = "";
+   baohiem = document.getElementById("baohiem").value = "";
+   phuthuoc = document.getElementById("phuthuoc").value = "";
+      document.getElementById("result1").innerHTML = "";
+     document.getElementById("result2").innerHTML = "";
+     document.getElementById("result3").innerHTML = "";
+     document.getElementById("result4").innerHTML = "";
+     document.getElementById("result").innerHTML = "";
+}           
                 
