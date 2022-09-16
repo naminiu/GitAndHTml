@@ -212,6 +212,38 @@
             </th>
         </tr>
     </table>
+<br><br>
+    <table border="1">
+        <!--
+            b1: nhập số tiền thu nhập/tháng - lương đóng bảo hiểm - số người phụ thuộc
+            b2: tính  % mức đóng bảo hiểm
+            b3: giảm trừ bản thân 11.000.000
+            b4: giảm trừ người phụ thuộc. trừ mỗi người 4.400.000
+            b5:  thu nhập tính thuế = lương - % bảo hiểm - 11.000.000 - số người phụ thuộc
+            b3: % thuế dựa vào bảng bên dưới 
+
+         -->
+         <ng-show></ng-show>
+        <tr>
+            <th colspan="6">Bài 11: Viết chương trình tính thuế thu nhập cá nhân.</th>
+        </tr>
+        <tr>
+            <th>Số KWh: </th>
+            <th><input type="number" id="number10"></th>
+        </tr>
+        <tr>
+            <th>Số tiền là:</th>
+            <th>
+                <p id="result10"></p>
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><button onclick="submit10()">Bấm để kiểm tra</button>
+                <button onclick="reset10()">reset</button>
+            </th>
+        </tr>
+    </table>
 </body>
 <script src="/BTLuyenTapCauTrucDieuKienLoai2/bai1.js"></script>
 <script src="/BTLuyenTapCauTrucDieuKienLoai2/bai2.js"></script>

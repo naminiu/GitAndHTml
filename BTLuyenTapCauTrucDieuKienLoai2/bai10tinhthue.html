@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+    <p>Bảo hiểm bắt buộc = lương đóng bảo hiểm x 10.5%</p>
+    <p>Giảm trừ bản thân = -11,000,000 VNĐ</p>
+    <p>Giảm trừ người phụ thuộc = số người phụ thuộc x 4,400,000 VNĐ</p>
+    <p>thu nhập tính thuế = thu nhập tháng - bảo hiểm bắt buộc - giảm trừ bản thân - giảm trừ người phụ thuộc</p>
+    <p>Mức thuế áp dụng đối với thu nhập tính thuế, xem bảng dưới:</p>
+    <img src="/BTLuyenTapCauTrucDieuKienLoai2/thue.png" alt="">
+    <table>
+        <tr>
+            <th>Thu nhập tháng</th>
+        </tr>
+        <tr>
+            <th><input type="number" id="luongthang" value="0"></th>
+        </tr>
+        <tr>
+            <th>Lương đóng bảo hiểm</th>
+        </tr>
+        <tr>
+            <th><input type="number" id="baohiem"></th>
+        </tr>
+        <tr>
+            <th>Số người phụ thuộc</th>
+        </tr>
+        <tr>
+            <th><input type="number" id="phuthuoc"></th>
+        </tr>
+        <tr>
+            <th><p id="result1" ></p>
+            <p id="result2"></p>    
+            <p id="result3"></p>    
+            <p id="result4"></p>    
+            <p id="result"></p> </th>
+
+        </tr>
+        <tr>
+            <th><button onclick="submit()">Kiểm tra</button></th>
+        </tr>
+        <script>
+            
+        </script>
+    </table>
+</body>
+<script src="/BTLuyenTapCauTrucDieuKienLoai2/bai10tinhthue.js"></script>
+</html>
