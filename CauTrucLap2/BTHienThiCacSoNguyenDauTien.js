@@ -17,12 +17,22 @@ function check1(){
         lặp lại cho đến khi in ra được 5 số: kq = numbersosanh
     */
 
-    let number = prompt("Nhập 1 số để kiểm tra: ");
-    let count = 0; // dùng để chia kiểm tra ước. ví dụ 5/0 5/1 5/2...
-    let countss = 0; // để kiểm tra số lượng ng tố cần in ra hay chưa, bằng với number
+        let number = prompt("Nhập 1 số để kiểm tra: ");
+        let count = 1; // dùng để chia kiểm tra ước. ví dụ 5/0 5/1 5/2...
+        let countss = 0; // để kiểm tra số lượng ng tố cần in ra hay chưa, bằng với number
 
-        
+
+        for (let i = 1; i <= number; i++) {
+            
+            for (let j = 2; j <= 1000; j++) {
+            if (J % count == 0) {
+                    console.log(j)
+            } 
+            }
+                
+            }
+            }
+   
 
 
     document.getElementById("result1").innerHTML = number;
-}
