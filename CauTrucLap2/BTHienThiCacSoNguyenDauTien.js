@@ -21,6 +21,11 @@ function check1(){
         let count = 1; // dùng để chia kiểm tra ước. ví dụ 5/0 5/1 5/2...
         let countss = 0; // để kiểm tra số lượng ng tố cần in ra hay chưa, bằng với number
 
+            4
+                
+
+
+
 
         for (let i = 1; i <= number; i++) {
             

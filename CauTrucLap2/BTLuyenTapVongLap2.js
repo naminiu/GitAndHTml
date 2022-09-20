@@ -4,12 +4,13 @@ function check1() {
     let f1 = parseInt(prompt("Nhập f1: "));
     let kq = "";
     for (let i = 0; i < 20; i++) {
-        document.write(`${f0} <br>  `);
+       kq += (`${f0} <br>  `);
 
         const tmp = f0;
         f0 = f1;
         f1 = tmp + f1;
     }
+    document.getElementById("result1").innerHTML = kq;
 }
 
 function check2(){
