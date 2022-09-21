@@ -9,20 +9,23 @@
 
 <body>
     <script>
-
-        function processConfirm(answer) {
+        function processconfirm(answer) {
             let result = "";
             if (answer) {
-                result = "Excellent. We'll play a nice game of chess.";
+                result = alert("Excellent. We'll play a nice game of chess.");
             } else {
-                result = "Maybe later then.";
+                result = alert("Maybe later then.");
             }
-            return result;
         }
+        let question = confirm("Shall we play a game?");
+        let result1 = processconfirm(question);
 
-        let confirmAnswer = confirm("Shall we play a game?");
-        let theAnswer = processConfirm(confirmAnswer);
-        alert(theAnswer);
+    //    let result =  processconfirm(alert(confirm("Shall we play a game?")));
+
+
+
+
+
 
     </script>
 </body>
