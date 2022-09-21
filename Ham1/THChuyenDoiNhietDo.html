@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="https://james.codegym.vn/pluginfile.php/65002/mod_assign/intro/1.png" alt="">
+    <h2>Temperature Converter</h2>
+    <h4>Type a value in the Fahrenheit field to convert the value to Celcius:</h4>
+    <b>Fahrenheit:</b><input type="number" id="number" oninput="calculator()">
+    <p id="result"><b>Celcius:</b></p>
+    <script>
+
+        function congthucF(number) {
+             doC = (number - 32) / 1.8;
+            return doC;
+        }
+
+        function calculator(){
+        let input = document.getElementById("number").value;
+        let result1 = congthucF(input);
+        document.getElementById("result").innerHTML = `<b>Celcius:</b> ${result1}`;
+    }
+    </script>
+</body>
+
+</html>
