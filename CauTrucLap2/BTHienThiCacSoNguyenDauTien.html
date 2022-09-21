@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTHienThiCacSoNguyenDauTien</title>
-    <script src="/CauTrucLap2/BTHienThiCacSoNguyenDauTien.js"></script>
 </head>
+
 <body>
     <h2>[Bài tập] Hiển thị các số nguyên tố đầu tiên</h2>
+    <input type="number" id="number">
     <button onclick="check1()">Click để kiểm tra</button>
     <p id="result1">Kết quả hiện ở đây</p>
+    <script>
+        function check1(){
+        let input = document.getElementById("number").value;
+        let number = 2;
+        let countOfDivisor = 0;
+        let top20Primes = 0;
+        let kq = "";
+        while (top20Primes < input) {
+            for (let divisor = 2; divisor < number; divisor++) {
+                if (number % divisor == 0) {
+                    countOfDivisor++;
+                }
+            }
+            if (countOfDivisor == 0) {
+                top20Primes++;
+            //    document.getElementById("result1").innerHTML = number;
+            // document.write(number + " ");
+            kq += number + " " ;
+            }
+            number++;
+            countOfDivisor = 0;
+        }
+      document.getElementById("result1").innerHTML = kq;  
+    }
+    </script>
 </body>
+
+
 </html>
