@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THDaoNguocCacPhanTuTrongMang</title>
+</head>
+<body>
+    <script>
+
+let x = [-3, 5, 1, 3, 2, 10];
+let a = 0;
+let b = x.length - 1;
+// bài toán đổi a qua b, b qua a
+// lấy thêm 1 bình c
+// đổ a qua c, đổ b qua a, đổ c qua b
+while (a < b) {
+    let c = x[a];
+    x[a] = x[b];
+    x[b] = c;
+    a++;
+    last--;
+}
+console.log(x);
+
+
+let x = [-3, 5, 1, 3, 2, 10];
+let last = x.length - 1;
+for (let first = 0; first < last; first++) {
+    let b = x[first];
+    x[first] = x[last];
+    x[last] = b;
+    first++;
+    last--;
+}
+console.log(x);
+
+
+
+
+    </script>
+</body>
+</html>
