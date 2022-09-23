@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- // let vidu = [0, 1, 2, 3, 4];
+    // let a = vidu.copyWithin(2, 0, 2);
+    // console.log(a);
+
+    // let vidu = ["mot", "hai", "bai"]
+    // console.log(a);
+
+    // codegym, codegym, codegym, codegym, codegym, codegym, codegym, codegym
+    // codegym, codegym, codegym, codegym, codegym, codegym, codegym, codegym,
+    // // vidu.push(5);
+    // // console.log(vidu);
+    // // // push: thêm phần tử vào cuối mảng
+
+    // // vidu[vidu.length] = 1;
+    // // console.log(vidu);
+    // // // cũng thêm vào cuối, dựa vào length
+
+    // console.log(vidu.join("+"));
+
+    // var array = [5, 3, 4, 1];
+
+    // for (var x = 0; x < 4; x++) { // for (var y=3; y> x; y--) {
+        // if (array[x] > array[y]) {
+        // var temp = array[y];
+        // array[y] = array[x];
+        // array[x] = temp;
+        // }
+        // }
+        // }
+
+        // console.log(array);
+
+        // module.exports = {
+        // sum_odd_5000
+        // };
+
+        // function sum_odd_5000() {
+        // var sum = 0;
+        // var number = 1;
+        // while (number <= 5000) { // if (number % 2==0) { // } else { // sum=sum + number; // } // number++; // } //
+            var sum=0; // for (let i=1; i < 5000; i+=2) { // sum=sum + i; // } // console.log(sum); // return sum; // }
+            // let arr=[]; // for (let i=1; i <=50; i +=2) { // arr.push(i); // } // console.log(arr); // let arr=[]; //
+            let y=Number; // let count=0; // for (let i=0; i < arr.length; i++) { // if (arr[i]> y) {
+            // count +=1;
+            // }
+            // }
+            // console.log(count);
+
+            // for (let i = 0; i < array.length; i++) { // if (arr[i]<0) { // arr[i]==0; // } // } // let arr=[1, 2, 3,
+                4, 5]; // let arrnew=[]; // let min=arr[0]; // let sum=0; // for (let i=0; i < arr.length; i++) { // if
+                (arr[i] <=min) { // min=arr[i]; // arrnew.push(arr[i]); // } // if (arr[i]>= max) {
+                // max = arr[i];
+                // arrnew.push(arr[i]);
+                // }
+                // sum += arr[i];
+                // }
+                // arrnew.push(sum / arr.length);
+
+                // console.log(arrnew);
+
+
+                // module.exports = {
+                // maxMinAvg
+                // };
+
+                // function maxMinAvg(arr) {
+
+                // let arr = [1, 2, 3, 4, 5];
+                // let arrnew = [];
+                // let min = arr[0];
+                // let max = arr[0];
+                // let sum = 0;
+                // for (let i = 1; i < arr.length; i++) { // if (arr[i] < min) { // min=arr[i]; // } // if (arr[i]> max)
+                    {
+                    // max = arr[i];
+                    // }
+
+                    // }
+                    // console.log(min);
+                    // arrnew.push(arr[i]);
+                    // console.log(max);
+                    // arrnew.push(arr[i]);
+
+                    // console.log(arrnew);
+
+                    // cho người dùng nhập vào 1 con số (là số lượng mảng) -->
+    <!-- <input type="number" id="number">
+    <button onclick="submit()">submit</button>
+    <p id="result">Kết quả hiện ở đây</p> -->
+    <script>
+        // let size = Number(prompt("Nhập 1 số:"));
+        // let numbers = new Array(size);
+        // for (let i = 0; i < numbers.length; i++) {
+        //     let number;
+        //     do {
+        //         number = Number(prompt(`nhập số thứ ${i + 1}: (chỉ nhập số) `));
+
+        //     } while (Number.isNaN(number));
+        //     numbers[i] = number;
+        // }
+        // document.write(numbers);
+        // Math.floor(Math.random()*(max-min+1)+min)
+        // Math.ceil(Math.random()*(max-min)+min)
+        // let size = Number(prompt("Nhập 1 số:"));
+        // let numbers = new Array(size);
+        // // let ramdom1 = Math.ceil(Math.random()*10);
+        // for (let i = 0; i < numbers.length; i++) {
+        //     let ramdom1 = Math.ceil(Math.random() * 10)
+        //     numbers[i] = ramdom1;
+        // }
+        // document.write(numbers);
+
+
+        // let ramdom1 = Math.ceil(Math.random()*10);
+
+
+
+
+
+
+
+            let size = Number(prompt("Nhập 1 số:"));
+            let numbers = new Array(size);
+            let numbereven = [];
+            let min = 1;
+            let max = 10;
+            let counteven = 0;
+            for (let i = 0; i < numbers.length; i++) {
+                let ramdom1 = Math.floor(Math.random() * (max - min + 1) + min);
+                {
+                    numbers[i] = ramdom1;
+                }
+            }
+            console.log(numbers);
+
+            for ( i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 2 == 0) {
+                        numbereven.push(numbers[i]);
+                    counteven++;
+                }
+            }
+            console.log(counteven);
+            console.log(numbereven);
+
+
+    </script>
+
+</body>
+
+</html>

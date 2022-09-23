@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THTaoVaThaoTacCoBan</title>
+</head>
+
+<body>
+    <input type="text" name="" id="input">
+    <button onclick="submit()">Submit</button>
+    <p id="result"></p>
+</body>
+<script>
+    function submit() {
+        let i = 0;
+        let array = [];
+         array[i] = document.getElementById("input").value;
+         document.getElementById("result").innerHTML = array[i];
+
+    }
+
+    
+    // function submit(){
+    // let courses = document.getElementById("input").value;
+    // let coursesString = "";
+    // for (let i = 0; i < courses.length; i++) {
+    //     coursesString += `<input type="checkbox" >  ${courses[i]} <br>`;
+    // }
+    // document.getElementById("result").innerHTML = coursesString;
+    // }
+</script>
+
+</html>
