@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text " id="input">
+    <button onclick="submit()">Translate</button>
+    <p id="result"></p>
+</body>
+<script>
+    /*
+        khai biến kho chứa tiếng anh
+        khai biến kho chứa tiếng việt
+        nhập dũ liệu
+        khai biến vị trí của kho chứa dữ liệu tiếng anh.
+        sử dụng for,nếu dữ liệu có trong chứa tiếng anh,
+        thì lấy ra vị trí của dữ liệu đó.
+        sử dụng for, kiểm tra bên kho tiếng việt
+        nếu vị trí đó trùng với vị trí của kho tiếng việt, thì gán biến nhập dữ liệu với giá trị của ví trí 
+        ở kho tiếng việt.
+    */
+
+    function submit() {
+        let arrEng = ["hi", "laptop", "rice", "banana", "orange"];
+        let arrVie = ["xin chào", "Máy tính", "cơm", "chuối", "cam"];
+        let input = document.getElementById("input").value;
+        let indexEng = 0;
+        let result = "";
+        for (let i = 0; i < arrEng.length; i++) {
+            if (input == arrEng[i]) {
+                indexEng = i; 
+                for (let j = 0; j < arrVie.length; j++) {
+                    if (indexEng == j) { 
+                        result = arrVie[j]; 
+                    }
+                }
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+
+</html>
