@@ -9,30 +9,30 @@
 </head>
 
 <body>
-    <b>nhập 1 số để kiểm tra    :</b><input type="number" id="number" oninput="calculator()">
+    <b>Chuyển đổi Mét sang Feet: </b><input type="number" id="number" oninput="calculator()">
     <p id="result"><b>Kết quả:</b></p>
+    <b>Chuyển đổi Feet sang Mét: </b><input type="number" id="number1" oninput="calculator1()">
+    <p id="result1"><b>Kết quả:</b></p>
     <script>
-        function soNgTo(number) {
-            let count = 0; // dấu hiệu
-            let kq = "";
-            for (let i = 2; i < number - 1; i++) {
-                if (number % i == 0) {
-                    count++;
-                    break;
-                }
-            }
-            // kiểm tra sign
-            if (count == 0) {
-                kq = (`<b>Kết quả:</b> ${number} là số nguyên tố `);
-            } else {
-                kq = (`<b>Kết quả:</b> ${number} không phải là số nguyên tố `);
-            }
+        function meterToFeet(meter) {
+            nhapfeet = 3.279 * meter;
+            kq = `<b>Kết quả:</b> ${meter} m = ${nhapfeet} ft`;
             return kq;
         }
 
         function calculator() {
             let input = document.getElementById("number").value;
-            document.getElementById("result").innerHTML = soNgTo(input);
+            document.getElementById("result").innerHTML = meterToFeet(input);
+        }
+        function FeetToMeter(nhapfeet) {
+            met = 0.305 * nhapfeet;
+            kq1 = `<b>Kết quả:</b> ${nhapfeet} ft = ${met} m`;
+            return kq1;
+        }
+
+        function calculator1() {
+            let input1 = document.getElementById("number1").value;
+            document.getElementById("result1").innerHTML = FeetToMeter(input1);
         }
        // function soNgTo(number) {
         //     let sign = true; // dấu hiệu
