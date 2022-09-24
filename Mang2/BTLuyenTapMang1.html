@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Bài 1- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử. Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.
+        let arr = new Array(10);
+        let min = 0;
+        let max = 20;
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        console.log(arr);
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                console.log(arr[i]);
+                count++;
+            }
+        }
+        console.log(count);
+
+        //Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.
+        let arr = new Array(10);
+        let minceil = 0;
+        let maxfloor = 100;
+        let count = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = Math.floor(Math.random() * (maxfloor - minceil + 1) + minceil);
+        }
+        console.log(arr)
+
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        console.log(max);
+        console.log(arr.indexOf(max))
+        //Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.
+        let arr = new Array(10);
+        let minceil = 0;
+        let maxfloor = 10;
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = Math.floor(Math.random() * (maxfloor - minceil + 1) + minceil);
+            sum += arr[i];
+        }
+        console.log(arr)
+
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        console.log(max);
+        console.log(sum / arr.length);
+        // Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.
+
+        let arr = new Array(10);
+        let minceil = 0;
+        let maxfloor = 100;
+        let sum = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = Math.floor(Math.random() * (maxfloor - minceil + 1) + minceil);
+        }
+        console.log(arr)
+
+        let end = arr.length - 1;
+        for (let first = 0; first < end;) {
+            let temporary = arr[first];
+            arr[first] = arr[end];
+            arr[end] = temporary;
+            first++;
+            end--;
+        }
+        console.log(arr)
+
+        //bai 5
+        // let value = ["xin chao ban"];
+        // value.toString((" "));
+        // console.log(value.toString((" ")));
+
+        // let vcount = ["u", "e", "o", "a", "i"];
+        // let countdem = 0;
+        // for (let i = 0; i < vcount; i++) {
+        //     for (let j = 0; j < value.length; j++) {
+        //         let value.indexOf(j);
+        //         if (value.indexOf(j) == vcount[i]) {
+        //             countdem++;
+        //             console.log(countdem);
+        //         }
+        //     }
+        // }
+        // console.log(countdem);\
+
+        // bai 6
+        let arr = new Array(10);
+        let minceil = 0;
+        let maxfloor = 10;
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = Math.floor(Math.random() * (maxfloor - minceil + 1) + minceil);
+        }
+        console.log(arr)
+        let doanso = Number(prompt("Nhap 1 so"));
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] == doanso) {
+                alert(doanso + " is in the array");
+            }
+        }
+
+
+            // chưa làm được else
+        // BAI 8
+        let arr = new Array(10);
+        let minceil = 0;
+        let maxfloor = 20;
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = Math.floor(Math.random() * (maxfloor - minceil + 1) + minceil);
+        }
+        console.log(arr);
+        arr.sort(function(a, b){return b - a});
+        console.log(arr);
+
+        //bai 9
+        let arr1 = new Array(10);
+        let arr2 = new Array(10);
+        let arr3 = [];
+        let minceil = 0;
+        let maxfloor = 20;
+        for (let i = 0;      i < arr2.length; i++) {
+            arr2[i] = Math.floor(Math.random() * (maxfloor - minceil + 1) + minceil);
+            arr3.push(arr2[i])
+        }
+        console.log(arr2);
+        for (let i = 0; i < arr1.length; i++) {
+            arr1[i] = Math.floor(Math.random() * (maxfloor - minceil + 1) + minceil);
+            arr3.push(arr1[i])
+        }
+        console.log(arr1);
+        console.log(arr3);
+
+
+    </script>
+</body>
+
+</html>

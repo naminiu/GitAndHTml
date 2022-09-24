@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<script>
+    let string = ("The quick brown fox");
+    var vowel_list = 'aeiouAEIOU';
+    var vcount = 0;
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    for (var x = 0; x < string.length; x++) {
+        if (vowel_list.indexOf(string[x]) !== -1) {
+            vcount += 1;
 
-<body>
-    <script>
-        let arr = [-1, 2, -3, 4, -5];
-        for (let index = 0; index < arr.length; index++) {
-            if (arr[index] < 0) {
-                arr[index] = "'Dojo'";
-            }
+        } else{
+            console.log(string[x]);
         }
-        console.log(arr);
-
-    </script>
-</body>
-
-</html>
+    }
+</script>
