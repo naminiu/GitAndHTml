@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Bài 1: Tính bình phương</h3>
+    Bình phương của <input type="number" id="number" oninput="calculator()" placeholder="Nhập số"> là:
+    <span id="result"></span> <br><br>
+
+    <h3>Bài 2: Tính diện tích, chu vi hình tròn</h3>
+    <input type="number" id="numbera" oninput="calculator1()" placeholder="Tính diện tích">
+    <span id="result1"></span> <br><br>
+    <input type="number" id="numberb" oninput="calculator2()" placeholder="Tính chu vi">
+    <span id="result2"></span>
+
+    <h3>Bài 3: Tính giai thừa</h3>
+    <input type="number" id="number3" oninput="calculator3()" placeholder="Tính giai thừa">
+    <span id="result3"></span> <br><br>
+
+    <h3>Bài 4: kiểm tra có phải kí tự số hay không</h3>
+    <input type="text" id="number4" placeholder="Nhập để kiểm tra">
+    <button onclick="check4()">check</button>
+    <span id="result4" style="color: red;"></span> <br><br>
+
+
+
+    <h3>Bài 5: nhập vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất</h3>
+    <input type="number" id="number5" placeholder="Nhập để kiểm tra">
+    <input type="number" id="number51" placeholder="Nhập để kiểm tra">
+    <input type="number" id="number52" placeholder="Nhập để kiểm tra">
+    <button onclick="check5()">check</button>
+    <span id="result5" style="color: red;"></span> <br><br>
+
+    <script>
+        //Bài 5: 
+        function findmin(a, b, c) {
+            let kq = "";
+            if (a > b && a > c) {
+                kq = `${a} là số lớn nhất`;
+            } else if (b > c) {
+                kq = `${b} là số lớn nhất`;
+            } else {
+                kq = `${c} là số lớn nhất`;
+            }
+            return kq;
+        }
+        function check5() {
+            let input5 = Number(document.getElementById("number5").value);
+            let input51 = Number(document.getElementById("number51").value);
+            let input52 = Number(document.getElementById("number52").value);
+            document.getElementById("result5").innerHTML = findmin(input5, input51, input52);
+        }
+
+
+
+
+
+        //bài 4:
+        function check(checkstring) {
+            // let kq = "";
+            if (Number.isNaN(checkstring)) {
+                kq = " False";
+            } else {
+                kq = " True";
+            }
+            return kq;
+        }
+        function check4() {
+            let input4 = Number(document.getElementById("number4").value);
+            document.getElementById("result4").innerHTML = check(input4);
+
+        }
+
+        //bai 3:
+        function giaithua(number) {
+            let result = 1;
+            for (let i = 1; i <= number; i++) {
+                result *= i;
+            }
+            let cont = `Giai thừa của ${number} là ${result}`;
+            return cont;
+        }
+        function calculator3() {
+            let input3 = Number(document.getElementById("number3").value);
+            document.getElementById("result3").innerHTML = giaithua(input3);
+
+        }
+
+        //bai 1:
+        function square(number) {
+            return number * number;
+        }
+        function calculator() {
+            var result1 = "";
+            let input = Number(document.getElementById("number").value);
+            result1 = square(input);
+            document.getElementById("result").innerHTML = result1;
+        }
+        //bài 2.1
+        function dientich(number2) {
+            dt = "Diện tích là: " + (number2 * number2 * (3.14));
+            return dt;
+        }
+        function calculator1() {
+            let inputa = Number(document.getElementById("numbera").value);
+            result2 = dientich(inputa);
+            document.getElementById("result1").innerHTML = result2;
+
+        }
+        //bai 2.2
+        function chuvi(number3) {
+            cvi = "Chu vi là: " + (number3 * 2 * (3.14));
+            return cvi;
+        }
+        function calculator2() {
+            let inputb = Number(document.getElementById("numberb").value);
+            result3 = chuvi(inputb);
+            document.getElementById("result2").innerHTML = result3;
+
+        }
+
+    </script>
+</body>
+
+</html>
