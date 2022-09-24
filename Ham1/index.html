@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    Bình phương của <input type="number" id="number" oninput="calculator()" placeholder="Nhập số"> là: <span
-        id="result1"></span> <br><br>
+    Bình phương của <input type="number" id="number" oninput="calculator()" placeholder="Nhập số"> là:
+    <span id="result1"></span> <br><br>
     Tổng của <input type="number" id="numbera" oninput="calculator1()" placeholder="Nhập a"> với
-    <input type="number" id="numberb" oninput="calculator1()" placeholder="Nhập b">
-    là: <span id="result2"></span>
+    <input type="number" id="numberb" oninput="calculator1()" placeholder="Nhập b"> là:
+    <span id="result2"></span>
 
     <script>
         function square(number) {
@@ -22,6 +22,7 @@
             // return result;
             return number * number;
         }
+        squre(11)
         function calculator() {
             var result1 = "";
             let input = Number(document.getElementById("number").value);
@@ -31,11 +32,7 @@
 
         function sum(a, b) {
             return a + b;
-            let firstArg = arguments[0];
-            console.log(firstArg);
         }
-        sum(1, 2);
-
         function calculator1() {
             let inputa = Number(document.getElementById("numbera").value);
             let inputb = Number(document.getElementById("numberb").value);
