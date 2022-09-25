@@ -37,7 +37,40 @@
     <button onclick="check5()">check</button>
     <span id="result5" style="color: red;"></span> <br><br>
 
+
+
+
+
+    <h3>Bài 6: kiểm tra có phải số nguyên dương hay không</h3>
+    <input type="text" id="number6" placeholder="Nhập để kiểm tra">
+    <button onclick="check6()">check</button>
+    <span id="result6" style="color: red;"></span> <br><br>
+
     <script>
+
+        //bài 6:
+        function checkngduong(nhapso) {
+            // let kq = "";
+            if (nhapso > 0) {
+                result6 = " True";
+            } else {
+                result6 = " False";
+            }
+            return result6;
+        }
+        function check6() {
+            let input6 = Number(document.getElementById("number6").value);
+            document.getElementById("result6").innerHTML = checkngduong(input6);
+
+        }
+
+
+
+
+
+
+
+
         //Bài 5: 
         function findmin(a, b, c) {
             let kq = "";
