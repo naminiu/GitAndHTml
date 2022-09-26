@@ -1,12 +1,8 @@
-      let size = Number(prompt('Enter size: '));
-        let numbers = new Array(size);
-        for(let i = 0; i < numbers.length; i++){
-            let number;
-            do{
-                number = Number(prompt(`Enter numbers[${i}]:`))
-            }
-            while(Number.isNaN(number))
+let numbers = [1,3,5,7,9];
 
-            numbers[i] = number;
-        }
-        console.lognumbers();
+numbers.pop()
+numbers.push()
+numbers.shift()
+numbers.splice()
+numbers.slice(1,2)
+console.log(numbers);
