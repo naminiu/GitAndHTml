@@ -30,20 +30,31 @@
         let arrEng = ["hi", "laptop", "rice", "banana", "orange"];
         let arrVie = ["xin chào", "Máy tính", "cơm", "chuối", "cam"];
         let input = document.getElementById("input").value;
+        let strinput = input.toLowerCase();
         let indexEng = 0;
         let result = "";
         for (let i = 0; i < arrEng.length; i++) {
-            if (input == arrEng[i]) {
-                indexEng = i; 
+            if (strinput == arrEng[i]) {
+                indexEng = i;
                 for (let j = 0; j < arrVie.length; j++) {
-                    if (indexEng == j) { 
-                        result = arrVie[j]; 
+                    if (indexEng == j) {
+                        result = arrVie[j];
                     }
                 }
             }
+            if (!result) {
+                result = "Không tìm thấy";
+            }
         }
+        let str = arrEng.join();
         document.getElementById("result").innerHTML = result;
     }
+    // let arrEng = ["Hi", "Laptop", "Rice", "Banana", "Orange"];
+    // let str = arrEng.join();
+    // let inThuong = str.toLocaleLowerCase();
+    // let inHoa = str.toLocaleUpperCase();
+    // let total = inThuong.concat(inHoa);
+    // console.log(total);
 </script>
 
 </html>
