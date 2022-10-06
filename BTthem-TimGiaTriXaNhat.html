@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 136: Tìm số chẵn cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị chẵn thì trả về -1
+        let arr = new Array(10);
+        let min = 1;
+        let max = 20;
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        console.log(arr);
+        let last = "";
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                last = arr[i];
+                count++;
+            }
+            if (count == 0) {
+                last = "-1";
+            }
+        }
+        console.log(last);
+        // Bài 137: Tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số thực
+        let arr = new Array(10);
+        let minrandom = 1;
+        let maxrandom = 20;
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = Math.floor(Math.random() * (maxrandom - minrandom + 1) + minrandom);
+        }
+        console.log(arr);
+        let min = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        console.log(" số thấp nhất là: " + min)
+        console.log("Vị trí số thấp nhất là: " + arr.indexOf(min));
+        // Bài 138: Tìm vị trí của giá trị chẵn đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị chẵn thì sẽ trả về -1
+        let arr = new Array(10);
+        let min = 1;
+        let max = 20;
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        console.log(arr);
+        let first = "";
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                first = arr[i];
+                count++;
+                break;
+            }
+            if (count == 0) {
+                first = "-1";
+            }
+        }
+        console.log(first);
+
+
+        // bài: tìm số hoàn thiện
+
+        // chạy từ 1 đến 10000
+        // lấy tổng các số ước mà nó chia hết,
+        // cộng lại có bằng chính nó hay không
+        // let NumberTangdan = ;
+        // while (NumberTangdan <= 1000) {
+        let arr = [];
+        let sum = 0;
+        let numberTangDan = 6;
+        for (let i = 1; i < numberTangDan; i++) {
+            if (numberTangDan % i == 0) {
+                arr.push(i);
+            }
+        }
+        console.log(arr);
+        for (let j = 0; j < arr.length; j++) {
+            sum += arr[j];
+        }
+        console.log(sum);
+        if (numberTangDan == sum) {
+            alert(numberTangDan + " là số hoàn hảo")
+        }
+
+        //
+
+        let number = 2;
+        while (number < 1000) {
+            let total = 0;
+            for (let i = 1; i < number; i++) {
+                if (number % i == 0) {
+                    total += i;
+                }
+            }
+            if (number == total) {
+                console.log(number);
+            }
+            number++;
+        }
+    </script>
+</body>
+
+</html>
